@@ -10,6 +10,5 @@ int main()
 
 	mainProgram.startProgram();
 
-	getchar();
 }
 
