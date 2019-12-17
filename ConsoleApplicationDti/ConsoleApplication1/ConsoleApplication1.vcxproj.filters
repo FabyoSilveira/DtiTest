@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\View">
+      <UniqueIdentifier>{69620209-0c23-4002-a0e0-7387fa51ebaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Model">
+      <UniqueIdentifier>{242908c8-5e50-4c76-90fd-bec71c197973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Controller">
+      <UniqueIdentifier>{785e4fe4-2f87-47c1-850e-bc05f4e57575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\DAO">
+      <UniqueIdentifier>{ca921494-0599-4fab-838a-969b896e95c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\View">
+      <UniqueIdentifier>{19198a28-7735-4c56-bf32-c910aa2d1aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Model">
+      <UniqueIdentifier>{60a6b63b-e3c8-4d37-a813-2f94888c90b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Controller">
+      <UniqueIdentifier>{d4496e50-d6b3-42fb-831f-1a8a51161812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\DAO">
+      <UniqueIdentifier>{002ce075-4d5c-4a10-a00b-e2828607770a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="mainMenuView.h">
+      <Filter>Arquivos de Cabeçalho\View</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="StartProgram.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="mainMenuView.cpp">
+      <Filter>Arquivos de Origem\View</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
