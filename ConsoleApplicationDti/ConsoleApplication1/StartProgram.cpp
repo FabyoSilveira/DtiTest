@@ -1,14 +1,15 @@
-
-
 #include "pch.h"
-#include "mainMenuView.h"
+#include "ProgramBuilder.h"
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-	mainMenuView mainProgram;
 
-	mainProgram.startProgram();
+	ProgramBuilder Program;
+
+	Program.startProgram();
 
 }
 

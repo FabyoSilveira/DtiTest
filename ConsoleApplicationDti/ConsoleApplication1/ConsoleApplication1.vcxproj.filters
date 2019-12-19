@@ -37,12 +37,24 @@
     <Filter Include="Arquivos de Origem\DAO">
       <UniqueIdentifier>{002ce075-4d5c-4a10-a00b-e2828607770a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\SourceClass">
+      <UniqueIdentifier>{66a54104-40f4-436d-ade0-dcc1a7050128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\SourceClass">
+      <UniqueIdentifier>{59a893df-397f-4caa-8df5-f0668eb2400e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="mainMenuView.h">
+    <ClInclude Include="programBuilder.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Arquivos de Cabeçalho\SourceClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientView.h">
       <Filter>Arquivos de Cabeçalho\View</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,7 +65,13 @@
     <ClCompile Include="StartProgram.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="mainMenuView.cpp">
+    <ClCompile Include="programBuilder.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Arquivos de Origem\SourceClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientView.cpp">
       <Filter>Arquivos de Origem\View</Filter>
     </ClCompile>
   </ItemGroup>
