@@ -1,7 +1,5 @@
 #include "pch.h"
 #include "ProgramBuilder.h"
-#include "ClientView.h"
-#include "Client.h"
 #include <iostream>
 #include <list>
 
@@ -14,13 +12,14 @@ ProgramBuilder::ProgramBuilder() {
 void ProgramBuilder::startProgram() {
 
 	do{
-	
+		
+		cout << "\n" << endl;
 		cout << "*****           Consultorio Nutricionista            *****" << endl;
 		cout << "*  Digite o numero da operacao que voce deseja realizar  *" << endl;
 		cout << "*  1 - Cadastrar Cliente                                 *" << endl;
 		cout << "*  2 - Cadastrar Consulta                                *" << endl;
-		cout << "*  3 - Mostrar Consultas                                 *" << endl;
-		cout << "*  4 - Mostrar Clientes                                  *" << endl;
+		cout << "*  3 - Mostrar Clientes                                  *" << endl;
+		cout << "*  4 - Mostrar Consultas                                 *" << endl;
 		cout << "*  0 - Sair                                              *" << endl;
 		cout << "**********************************************************" << endl;
 
@@ -35,22 +34,26 @@ void ProgramBuilder::startProgram() {
 void ProgramBuilder::userOptionHandler(int userOption) {
 	
 	if(userOption != 0){
+
 		switch(userOption){
 
 		case 1:
-
 			clientInterface.showClientRegisterMenu(&clientList);
-
+			break;
 		case 2:
-
+			cout << "Not implemented yet!" << endl;
+			break;
 		case 3:
-
+			clientInterface.showClientList(clientList);
+			break;
 		case 4:
-
+			cout << "Not implemented yet!" << endl;
+			break;
 		}
 
 	}
-	else
+	else {
 		return;
-
+	}
+	
 };

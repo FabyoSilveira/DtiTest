@@ -1,5 +1,9 @@
 #ifndef ProgramBuilder_H
 #define ProgramBuilder_H
+#include "ClientView.h"
+#include "Client.h"
+#include <list>
+
 class ProgramBuilder {
 
 public:

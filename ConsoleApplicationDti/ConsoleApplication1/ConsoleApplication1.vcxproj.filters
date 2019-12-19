@@ -57,6 +57,15 @@
     <ClInclude Include="ClientView.h">
       <Filter>Arquivos de Cabeçalho\View</Filter>
     </ClInclude>
+    <ClInclude Include="ClientController.h">
+      <Filter>Arquivos de Cabeçalho\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientModel.h">
+      <Filter>Arquivos de Cabeçalho\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDAO.h">
+      <Filter>Arquivos de Cabeçalho\DAO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -73,6 +82,15 @@
     </ClCompile>
     <ClCompile Include="ClientView.cpp">
       <Filter>Arquivos de Origem\View</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientController.cpp">
+      <Filter>Arquivos de Origem\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientModel.cpp">
+      <Filter>Arquivos de Origem\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDAO.cpp">
+      <Filter>Arquivos de Origem\DAO</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

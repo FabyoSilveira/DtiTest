@@ -5,12 +5,22 @@
 
 using namespace std;
 
-Client::Client(string name, string address, long phone, string email, string birthDate) {
+Client::Client() {
 
-	name = name;
-	address = address;
-	phone = phone;
-	email = email;
-	birthDate = birthDate;
+	name = "";
+	address = "";
+	phone = "";
+	email = "";
+	birthDate = "";
+
+}
+
+Client::Client(string p_name, string p_address, string p_phone, string p_email, string p_birthDate) {
+
+	name = p_name;
+	address = p_address;
+	phone = p_phone;
+	email = p_email;
+	birthDate = p_birthDate;
 
 }

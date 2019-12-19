@@ -85,7 +85,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -153,12 +153,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
+    <ClInclude Include="ClientController.h" />
+    <ClInclude Include="ClientDAO.h" />
+    <ClInclude Include="ClientModel.h" />
     <ClInclude Include="ClientView.h" />
     <ClInclude Include="programBuilder.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="ClientController.cpp" />
+    <ClCompile Include="ClientDAO.cpp" />
+    <ClCompile Include="ClientModel.cpp" />
     <ClCompile Include="ClientView.cpp" />
     <ClCompile Include="programBuilder.cpp" />
     <ClCompile Include="StartProgram.cpp" />
