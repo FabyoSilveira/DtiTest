@@ -47,6 +47,7 @@ void ClientView::showClientList(list<Client> clientList) {
 
 	cout << "*****           Lista de Clientes            *****" << endl;
 	cout << "\n" << endl;
+
 	for(i = clientList.begin(); i != clientList.end(); ++i){
 		
 		cout << "  Nome - " << i->name << "                     " << endl;

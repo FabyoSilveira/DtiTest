@@ -41,13 +41,13 @@ void ProgramBuilder::userOptionHandler(int userOption) {
 			clientInterface.showClientRegisterMenu(&clientList);
 			break;
 		case 2:
-			cout << "Not implemented yet!" << endl;
+			consultInterface.showConsultRegisterMenu(&consultList);
 			break;
 		case 3:
 			clientInterface.showClientList(clientList);
 			break;
 		case 4:
-			cout << "Not implemented yet!" << endl;
+			consultInterface.showConsultList(consultList);
 			break;
 		}
 

@@ -66,6 +66,21 @@
     <ClInclude Include="ClientDAO.h">
       <Filter>Arquivos de Cabeçalho\DAO</Filter>
     </ClInclude>
+    <ClInclude Include="ConsultView.h">
+      <Filter>Arquivos de Cabeçalho\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Consult.h">
+      <Filter>Arquivos de Cabeçalho\SourceClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsultController.h">
+      <Filter>Arquivos de Cabeçalho\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsultModel.h">
+      <Filter>Arquivos de Cabeçalho\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsultDAO.h">
+      <Filter>Arquivos de Cabeçalho\DAO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -90,6 +105,21 @@
       <Filter>Arquivos de Origem\Model</Filter>
     </ClCompile>
     <ClCompile Include="ClientDAO.cpp">
+      <Filter>Arquivos de Origem\DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultView.cpp">
+      <Filter>Arquivos de Origem\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Consult.cpp">
+      <Filter>Arquivos de Origem\SourceClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultController.cpp">
+      <Filter>Arquivos de Origem\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultModel.cpp">
+      <Filter>Arquivos de Origem\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsultDAO.cpp">
       <Filter>Arquivos de Origem\DAO</Filter>
     </ClCompile>
   </ItemGroup>
