@@ -11,6 +11,11 @@ public:
 	NutrientProviders();
 	NutrientProviders(string p_name, string p_group, float p_energy);
 
+	bool operator<(const NutrientProviders &a) const
+	{
+		return (energy < a.energy);
+	}
+
 	string name;
 	string group;
 	float energy;

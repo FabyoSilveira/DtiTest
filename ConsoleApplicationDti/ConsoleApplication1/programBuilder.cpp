@@ -72,7 +72,7 @@ void ProgramBuilder::userOptionHandler(int userOption) {
 			consultInterface.showConsultList(consultList);
 			break;
 		case 9:
-			"Not implemented yet!...";
+			nutrientProvidersInterface.showFoodCombinationMenu(energeticNutrientProviderList, constructorNutrientProviderList, restorerNutrientProviderList);
 			break;
 		}
 
@@ -87,13 +87,13 @@ void ProgramBuilder::userOptionHandler(int userOption) {
 void ProgramBuilder::setDefaultNutrientProviders() {
 
 	
-	NutrientProviders* auxObject = new NutrientProviders("Pao", "Energetico", 120.00);
+	NutrientProviders* auxObject = new NutrientProviders("Pao", "Energetico", 420.00);
 	energeticNutrientProviderList.push_back(*auxObject);
 
-	auxObject = new NutrientProviders("Arroz", "Energetico", 200.00);
+	auxObject = new NutrientProviders("Arroz", "Energetico", 100.00);
 	energeticNutrientProviderList.push_back(*auxObject);
 
-	auxObject = new NutrientProviders("Pizza", "Energetico", 400.00);
+	auxObject = new NutrientProviders("Pizza", "Energetico", 200.00);
 	energeticNutrientProviderList.push_back(*auxObject);
 
 	auxObject = new NutrientProviders("Frango", "Construtor", 350.00);
