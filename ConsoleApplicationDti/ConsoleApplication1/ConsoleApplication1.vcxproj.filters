@@ -81,6 +81,21 @@
     <ClInclude Include="ConsultDAO.h">
       <Filter>Arquivos de Cabeçalho\DAO</Filter>
     </ClInclude>
+    <ClInclude Include="NutrientProviders.h">
+      <Filter>Arquivos de Cabeçalho\SourceClass</Filter>
+    </ClInclude>
+    <ClInclude Include="NutrientProvidersView.h">
+      <Filter>Arquivos de Cabeçalho\View</Filter>
+    </ClInclude>
+    <ClInclude Include="NutrientProvidersController.h">
+      <Filter>Arquivos de Cabeçalho\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="NutrientProvidersModel.h">
+      <Filter>Arquivos de Cabeçalho\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NutrientProvidersDAO.h">
+      <Filter>Arquivos de Cabeçalho\DAO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -120,6 +135,21 @@
       <Filter>Arquivos de Origem\Model</Filter>
     </ClCompile>
     <ClCompile Include="ConsultDAO.cpp">
+      <Filter>Arquivos de Origem\DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrientProviders.cpp">
+      <Filter>Arquivos de Origem\SourceClass</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrientProvidersView.cpp">
+      <Filter>Arquivos de Origem\View</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrientProvidersController.cpp">
+      <Filter>Arquivos de Origem\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrientProvidersModel.cpp">
+      <Filter>Arquivos de Origem\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrientProvidersDAO.cpp">
       <Filter>Arquivos de Origem\DAO</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,6 +4,8 @@
 #include "Client.h"
 #include "ConsultView.h"
 #include "Consult.h"
+#include "NutrientProvidersView.h"
+#include "NutrientProviders.h"
 #include <list>
 
 class ProgramBuilder {
@@ -12,10 +14,15 @@ public:
 
 	ProgramBuilder();
 
-	void startProgram();
+	void startProgram();	
+
+private:
+
+	int userOption;
 
 	void userOptionHandler(int userOption);
 
+	void setDefaultNutrientProviders();
 
 	ConsultView consultInterface;
 	list<Consult> consultList;
@@ -23,9 +30,11 @@ public:
 	ClientView clientInterface;
 	list<Client> clientList;
 
-private:
+	NutrientProvidersView nutrientProvidersInterface;
 
-	int userOption;
+	list<NutrientProviders> energeticNutrientProviderList;
+	list<NutrientProviders> constructorNutrientProviderList;
+	list<NutrientProviders> restorerNutrientProviderList;
 
 };
 #endif

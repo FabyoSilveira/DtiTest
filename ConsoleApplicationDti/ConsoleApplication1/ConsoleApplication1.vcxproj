@@ -162,6 +162,11 @@
     <ClInclude Include="ConsultDAO.h" />
     <ClInclude Include="ConsultModel.h" />
     <ClInclude Include="ConsultView.h" />
+    <ClInclude Include="NutrientProviders.h" />
+    <ClInclude Include="NutrientProvidersController.h" />
+    <ClInclude Include="NutrientProvidersDAO.h" />
+    <ClInclude Include="NutrientProvidersModel.h" />
+    <ClInclude Include="NutrientProvidersView.h" />
     <ClInclude Include="programBuilder.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
@@ -176,6 +181,11 @@
     <ClCompile Include="ConsultDAO.cpp" />
     <ClCompile Include="ConsultModel.cpp" />
     <ClCompile Include="ConsultView.cpp" />
+    <ClCompile Include="NutrientProviders.cpp" />
+    <ClCompile Include="NutrientProvidersController.cpp" />
+    <ClCompile Include="NutrientProvidersDAO.cpp" />
+    <ClCompile Include="NutrientProvidersModel.cpp" />
+    <ClCompile Include="NutrientProvidersView.cpp" />
     <ClCompile Include="programBuilder.cpp" />
     <ClCompile Include="StartProgram.cpp" />
     <ClCompile Include="pch.cpp">
