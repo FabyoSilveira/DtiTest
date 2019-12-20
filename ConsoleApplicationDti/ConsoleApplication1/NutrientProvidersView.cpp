@@ -10,9 +10,19 @@ NutrientProvidersView::NutrientProvidersView() {
 
 }
 
+//Menu de cadastro de alimento
 void NutrientProvidersView::showNutrientProvidersRegisterMenu(list<NutrientProviders>* nutrientProvidersList, string group) {
 
+	int userOption;
+
 	do {
+
+		cout << "Deseja prosseguir com o cadastro ou voltar ao menu principal? 1 - Prosseguir / 2 - Menu Principal" << endl;
+		cin >> userOption;
+
+		if (userOption != 1) {
+			return;
+		}
 
 		cin.ignore();
 
@@ -24,12 +34,14 @@ void NutrientProvidersView::showNutrientProvidersRegisterMenu(list<NutrientProvi
 		
 		nutrientProvidersObject.group = group;
 
+	//Faz a chamada do fluxo de cadastro de alimento
 	} while (!controllerObject.subscribeConsult(nutrientProvidersList, nutrientProvidersObject));
 
 	cout << "Alimento cadastrado com sucesso!" << endl;
 
 }
 
+//Listagem de alimentos cadastrados
 void NutrientProvidersView::showNutrientProvidersList(list<NutrientProviders> energeticNutrientProvidersList, list<NutrientProviders> constructorNutrientProvidersList, list<NutrientProviders> restorerNutrientProvidersList) {
 
 	list<NutrientProviders>::iterator i;

@@ -2,6 +2,7 @@
 #define ConsultModel_H
 #include "Consult.h"
 #include "ConsultDAO.h"
+#include "Client.h"
 #include <list>
 #include <string>
 
@@ -11,9 +12,9 @@ public:
 
 	ConsultModel();
 
-	bool subscribeConsult(list<Consult>* consultList, Consult consultObject);
+	bool subscribeConsult(list<Consult>* consultList, Consult consultObject, list<Client> clientList);
 
-	bool verifyConsultConsistence(list<Consult>* consultList, Consult consultObject);
+	bool verifyConsultConsistence(list<Consult> consultList, Consult consultObject, list<Client> clientList);
 
 	string errorMessage;
 

@@ -1,5 +1,6 @@
 #include "ConsultView.h"
 #include "Consult.h"
+#include "Client.h"
 #include <iostream>
 #include <list>
 #include <conio.h>
@@ -10,11 +11,24 @@ ConsultView::ConsultView(){
 
 }
 
-void ConsultView::showConsultRegisterMenu(list<Consult>* consultList) {
+//Menu de cadastro de consulta
+void ConsultView::showConsultRegisterMenu(list<Consult>* consultList, list<Client> clientList) {
+
+	int userOption;
 
 	do {
 
+		cout << "Deseja prosseguir com o cadastro ou voltar ao menu principal? 1 - Prosseguir / 2 - Menu Principal" << endl;
+		cin >> userOption;
+
+		if (userOption != 1) {
+			return;
+		}
+
 		cin.ignore();
+
+		cout << "Nome do Cliente : ";
+		getline(cin, consultObject.clientName);
 
 		cout << "Data : ";
 		getline(cin, consultObject.date);
@@ -37,34 +51,51 @@ void ConsultView::showConsultRegisterMenu(list<Consult>* consultList) {
 		getline(cin, consultObject.additionalInformation);
 		cout << endl;
 
-	} while (!controllerObject.subscribeConsult(consultList, consultObject));
+	//Faz a chamada do fluxo de cadastro de consulta
+	} while (!controllerObject.subscribeConsult(consultList, consultObject, clientList));
 
 	cout << "Consulta cadastrado com sucesso!" << endl;
 
 }
 
-void ConsultView::showConsultList(list<Consult> clientList) {
+//Listagem de consultas cadastradas
+void ConsultView::showConsultList(list<Consult> consultList) {
 
 	list<Consult>::iterator i;
 
-	cout << "***************                          Lista de Consultas                           ***************" << endl;
-	cout << "\n" << endl;
-	
-	for (i = clientList.begin(); i != clientList.end(); ++i) {
+	if(!consultList.empty()){
 
-		cout << "  Data - " << i->date << "                     " << endl;
-		cout << "  Hora - " << i->time << "                   " << endl;
-		cout << "  Peso - " << i->weight << "                " << endl;
-		cout << "  Porcentagem de Gordura - " << i->bodyFat << "  " << endl;
-		cout << "  Estado Fisico - " << i->phisicState << "              " << endl;
-		cout << "  Informacoes Adicionais - " << i->additionalInformation << "              " << endl;
-		cout << "  ------------------" << endl;
+		cout << "***************                          Lista de Consultas                           ***************" << endl;
 		cout << "\n" << endl;
-	}
 
-	cout << "*****************************************************************************************************" << endl;
-	cout << "\n" << endl;
-	cout << "Aperte qualquer tecla para voltar ao menu principal..." << endl;
-	_getch();
+		for (i = consultList.begin(); i != consultList.end(); ++i) {
+
+			cout << "  Nome do Cliente - " << i->clientName << "                     " << endl;
+			cout << "  Data - " << i->date << "                     " << endl;
+			cout << "  Hora - " << i->time << "                   " << endl;
+			cout << "  Peso - " << i->weight << "                " << endl;
+			cout << "  Porcentagem de Gordura - " << i->bodyFat << "  " << endl;
+			cout << "  Estado Fisico - " << i->phisicState << "              " << endl;
+			cout << "  Informacoes Adicionais - " << i->additionalInformation << "              " << endl;
+			cout << "  ------------------" << endl;
+			cout << "\n" << endl;
+		}
+
+		cout << "*****************************************************************************************************" << endl;
+		cout << "\n" << endl;
+		cout << "Aperte qualquer tecla para voltar ao menu principal..." << endl;
+		_getch();
+
+	}
+	else {
+
+		cout << "\n" << endl;
+		cout << "Voce ainda nao possui nenhuma consulta cadastrada." << endl;
+		cout << "\n" << endl;
+		cout << "Aperte qualquer tecla para voltar ao menu principal e cadastrar sua nova consulta..." << endl;
+		_getch();
+
+	}
+	
 
 }

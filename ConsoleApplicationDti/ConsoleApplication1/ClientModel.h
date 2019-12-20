@@ -13,7 +13,7 @@ public:
 
 	bool subscribeClient(list<Client>* clientList, Client clientObject);
 
-	bool verifyClientConsistence(list<Client>* clientList, Client clientObject);
+	bool verifyClientConsistence(list<Client> clientList, Client clientObject);
 
 	string errorMessage;
 

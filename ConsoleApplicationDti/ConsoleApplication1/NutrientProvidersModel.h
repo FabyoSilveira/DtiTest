@@ -13,7 +13,7 @@ public:
 
 	bool subscribeNutrientProviders(list<NutrientProviders>* nutrientProvidersList, NutrientProviders nutrientProvidersObject);
 
-	bool verifyNutrientProvidersConsistence(list<NutrientProviders>* nutrientProvidersList, NutrientProviders nutrientProvidersObject);
+	bool verifyNutrientProvidersConsistence(list<NutrientProviders> nutrientProvidersList, NutrientProviders nutrientProvidersObject);
 
 	string errorMessage;
 

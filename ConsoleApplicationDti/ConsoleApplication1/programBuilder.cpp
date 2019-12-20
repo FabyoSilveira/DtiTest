@@ -10,6 +10,7 @@ ProgramBuilder::ProgramBuilder() {
 
 };
 
+//Menu principal com todas as opcoes do usuario
 void ProgramBuilder::startProgram() {
 
 	setDefaultNutrientProviders();
@@ -39,6 +40,7 @@ void ProgramBuilder::startProgram() {
 
 };
 
+//Gerencia a opcao do usuario e direciona para o fluxo correspondente
 void ProgramBuilder::userOptionHandler(int userOption) {
 	
 	if(userOption != 0){
@@ -49,7 +51,7 @@ void ProgramBuilder::userOptionHandler(int userOption) {
 			clientInterface.showClientRegisterMenu(&clientList);
 			break;
 		case 2:
-			consultInterface.showConsultRegisterMenu(&consultList);
+			consultInterface.showConsultRegisterMenu(&consultList, clientList);
 			break;
 		case 3:
 			nutrientProvidersInterface.showNutrientProvidersRegisterMenu(&energeticNutrientProviderList, "Energertico");
@@ -81,6 +83,7 @@ void ProgramBuilder::userOptionHandler(int userOption) {
 	
 };
 
+//Constroi uma cadeia de 3 alimentos de cada grupo
 void ProgramBuilder::setDefaultNutrientProviders() {
 
 	

@@ -8,7 +8,7 @@ class ConsultController {
 
 public:
 
-	bool subscribeConsult(list<Consult>* consultList, Consult consultObject);
+	bool subscribeConsult(list<Consult>* consultList, Consult consultObject, list<Client> clientList);
 
 private:
 

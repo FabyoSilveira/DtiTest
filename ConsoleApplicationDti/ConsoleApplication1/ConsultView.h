@@ -9,7 +9,7 @@ public:
 
 	ConsultView();
 
-	void showConsultRegisterMenu(list<Consult>* consultList);
+	void showConsultRegisterMenu(list<Consult>* consultList, list<Client> clientList);
 	void showConsultList(list<Consult> consultList);
 
 private:

@@ -3,8 +3,9 @@
 
 using namespace std;
 
-bool ConsultController::subscribeConsult(list<Consult>* consultList, Consult consultObject) {
+//Faz a chamada da classe de validação do cadastro de consulta
+bool ConsultController::subscribeConsult(list<Consult>* consultList, Consult consultObject, list<Client> clientList) {
 
-	return modelObject.subscribeConsult(consultList, consultObject);
+	return modelObject.subscribeConsult(consultList, consultObject, clientList);
 
 }
