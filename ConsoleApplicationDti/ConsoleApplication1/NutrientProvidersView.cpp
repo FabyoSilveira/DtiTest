@@ -150,23 +150,37 @@ void NutrientProvidersView::showFoodCombinationMenu(list<NutrientProviders> ener
 
 	//Percorre a lista de combinacoes preenchida e mostra para o usuario
 
-	for (l = foodCombinationList.begin(); l != foodCombinationList.end(); ++l) {
+	if(!foodCombinationList.empty()){
 
-		cout << "\n" << endl;
-		cout << "  Combinacao " << combinationCount << " :" << endl;
-		cout << "  --------------" << endl;
-		cout << "  Nome - " << l->energeticNutrient.name << "";
-		cout << "  Valor Energetico - " << l->energeticNutrient.energy << "";
-		cout << "  Grupo Alimentar - " << l->energeticNutrient.group << endl;
-		cout << "  Nome - " << l->constructorNutrient.name << "";
-		cout << "  Valor Energetico - " << l->constructorNutrient.energy << "";
-		cout << "  Grupo Alimentar - " << l->constructorNutrient.group << endl;
-		cout << "  Nome - " << l->restorerNutrient.name << "";
-		cout << "  Valor Energetico - " << l->restorerNutrient.energy << "";
-		cout << "  Grupo Alimentar - " << l->restorerNutrient.group << endl;
-		cout << "  -------------------" << endl;
-		combinationCount++;
+		for(l = foodCombinationList.begin(); l != foodCombinationList.end(); ++l) {
+
+			cout << "\n" << endl;
+			cout << "  Combinacao " << combinationCount << " :" << endl;
+			cout << "  --------------" << endl;
+			cout << "  Nome - " << l->energeticNutrient.name << "";
+			cout << "  Valor Energetico - " << l->energeticNutrient.energy << "";
+			cout << "  Grupo Alimentar - " << l->energeticNutrient.group << endl;
+			cout << "  Nome - " << l->constructorNutrient.name << "";
+			cout << "  Valor Energetico - " << l->constructorNutrient.energy << "";
+			cout << "  Grupo Alimentar - " << l->constructorNutrient.group << endl;
+			cout << "  Nome - " << l->restorerNutrient.name << "";
+			cout << "  Valor Energetico - " << l->restorerNutrient.energy << "";
+			cout << "  Grupo Alimentar - " << l->restorerNutrient.group << endl;
+			cout << "  -------------------" << endl;
+			combinationCount++;
+		}
+
 	}
+	else {
+		
+		cout << "\n" << endl;
+		cout << "Para essa quantidade calorica nao existe combinacao possivel. :(" << endl;
+		cout << "\n" << endl;
+		cout << "Aperte qualquer tecla para voltar ao menu principal e cadastrar alimentos menos caloricos..." << endl;
+		_getch();
+
+	}
+	
 
 	//Destroi a lista de combinacoes
 	foodCombinationList.clear();
